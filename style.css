@@ -1,4 +1,4 @@
-.container {
+.layout {
     background-color: #e0f7fa;
     padding: 20px;
     margin-bottom: 30px;
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.block-left {
+.layout__left {
     float: left;
     width: 100px;
     height: 100px;
@@ -18,7 +18,7 @@
     line-height: 100px;
 }
 
-.block-right {
+.layout__right {
     float: right;
     width: 100px;
     height: 100px;
@@ -29,11 +29,11 @@
     line-height: 100px;
 }
 
-.right-combined {
+.right-group {
     float: right;
 }
 
-.block-right-tall {
+.right-group__main--tall {
     float: left;
     width: 100px;
     height: 210px;
@@ -44,11 +44,11 @@
     margin-right: 10px;
 }
 
-.right-nested {
+.right-group__nested {
     float: left;
 }
 
-.block-nested {
+.right-group__nested-item {
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
@@ -58,12 +58,12 @@
     line-height: 100px;
 }
 
-.centre-combined {
+.center-group {
     width: 220px;
     margin: 0 auto;
 }
 
-.block-centre {
+.center-group__main {
     float: left;
     width: 100px;
     height: 210px;
@@ -74,11 +74,11 @@
     line-height: 100px;
 }
 
-.centre-nested {
+.center-group__nested {
     float: right;
 }
 
-.block-centre-nested {
+.center-group__nested-item {
     width: 100px;
     height: 100px;
     background-color: #f48fb1;
